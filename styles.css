@@ -132,12 +132,10 @@ word-wrap: break-word;
 }
 
 .textohome{
-  content: "";
   width: 369px;
   height: 140px;
   left: 682px;
   top: 373px;
   position: absolute;
   word-wrap: break-word;
-  break-before: left; 0px; 69px; 136px
 }
