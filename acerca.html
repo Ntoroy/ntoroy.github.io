@@ -20,12 +20,18 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="navbar.css" />
-    <script src="navbar.js"></script>
   </head>
   <body>
     <!-- Incluir el encabezado de la página -->
     <header>
-      <div id="navbar"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a id="acerca.html" class="active">Acerca de</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -49,6 +55,7 @@
     <footer></footer>
 
     <!-- Incluir el script para cargar el navbar -->
+    <script src="navbar.js"></script>
     <script src="footer.js"></script>
   </body>
 </html>
