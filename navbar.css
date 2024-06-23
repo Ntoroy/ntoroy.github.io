@@ -1,60 +1,39 @@
 /* Estilos para la barra de navegación */
 .navbar {
   display: flex; /* Usa un modelo de caja flexible para alinear los elementos */
-  width: 1440px;
-  gap: 364px;
   align-items: center; /* Centra verticalmente los elementos */
   justify-content: space-between; /* Distribuye el espacio entre los elementos */
-  background: var(--Shared-Background-BG-Elevation, #e8e8e8);
-  padding: 16px 32px;
+  background-color: #333; /* Color de fondo de la barra de navegación */
+  padding: 10px; /* Espacio de relleno dentro de la barra de navegación */
 }
 
 /* Estilos para el título de la barra de navegación */
 .navbar-title h1 {
   margin: 0; /* Elimina el margen predeterminado del título */
-  color: #201E1E(0, 0%, 100%);
+  color: #fff; /* Color del texto del título */
 }
 
 .navbar ul {
   list-style-type: none; /* Elimina los puntos de la lista */
   margin: 0; /* Elimina el margen exterior */
-  padding: 8px 16px;
+  padding: 0; /* Elimina el relleno de la lista */
   display: flex; /* Usa un modelo de caja flexible para los elementos de lista */
 }
 
 .navbar ul li {
-  margin-left: 32px; /* Espacio entre los elementos de lista */
+  margin-left: 20px; /* Espacio entre los elementos de lista */
 }
 
 .navbar ul li a {
-  color: #7b7b7b; /* Color del texto de los enlaces */
-  font-weight: 700;
-  display: inline-flex;
-  padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  color: #fff; /* Color del texto de los enlaces */
   text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
 }
 
 /* Estilos para los estados de los enlaces */
 .navbar ul li a:hover {
-  color: var(--Text-Secondary, #fff);
-  font-weight: 700;
-  display: inline-flex;
-  padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   text-decoration: underline; /* Subraya el enlace al pasar el ratón sobre él */
 }
 
 .navbar ul li a.active {
-  color: var(--Text-Primary, #201e1e);
-  display: inline-flex;
-  padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
   font-weight: bold; /* Resalta el enlace activo */
 }
