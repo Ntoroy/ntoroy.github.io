@@ -15,10 +15,14 @@ function cargarNavbar() {
         document.querySelectorAll(".navbar ul li a").forEach((enlace) => {
           enlace.classList.remove("active");
         });
-  
-        // Añadir la clase active al enlace correspondiente
-        document.getElementById(paginaActual).classList.add("active");
-        if(paginaActual=='ntoroy'){document.getElementById('index').classList.add("active");}
+        
+        if(document.getElementById(paginaActual)==null){
+          // Si no hay elemento con id, estamos en index
+          document.getElementById("index").classList.add("active");
+        }else{
+          // Añadir la clase active al enlace correspondiente
+          document.getElementById(paginaActual).classList.add("active");
+        }
       });
   }
   
