@@ -18,6 +18,7 @@ function cargarNavbar() {
   
         // Añadir la clase active al enlace correspondiente
         document.getElementById(paginaActual).classList.add("active");
+        if(paginaActual=='ntoroy'){document.getElementById('index').classList.add("active");}
       });
   }
   
